@@ -1,0 +1,46 @@
+run python from plasticity subfolder
+
+import plasticity
+plasticity.run()
+
+or
+
+pythonw Plasticity.pyw
+
+
+
+
+saved Brian's code as square10.dat. I load as Data Vector, set input size to 1, 4, etc -- the file path disappears but something does train
+
+saved two noise images as noise_images.hdf5. I load as Data Vector, set input size to 1, 4, etc -- does train, but how are different images being used?
+
+can fix initial weights in Weight Parameters
+
+
+
+trying images:
+
+for i from 0<= i < len(im):
+                im[i]=(im[i]*imss[0]+imss[1]).astype(np.float64)
+
+def hdf5_save_images(var,fname):
+    f=h5py.File(fname,'w')
+
+    f.attrs['im_scale_shift']=var['im_scale_shift']
+    for i,im in enumerate(var['im']):
+        f.create_dataset('image%d' % i,data=im)
+
+    f.close()
+
+def hdf5_load_images(fname):
+    f=h5py.File(fname,'r')
+    var={}
+    var['im_scale_shift']=list(f.attrs['im_scale_shift'])
+    N=len(f.keys())
+    var['im']=[]
+    for i in range(N):
+        var['im'].append(numpy.array(f['image%d' % i]))
+
+    f.close()
+
+    return var

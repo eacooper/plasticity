@@ -1,0 +1,190 @@
+Swanton:plasticity emily$ python setup.py install
+['plasticity.bbrand', 'plasticity.train']
+~~ plasticity/bbrand.c
+~~ plasticity/train.c
+['plasticity.bbrand', 'plasticity.train']
+version='0.1.2'
+running install
+running build
+running build_py
+running build_ext
+cythoning plasticity/bbrand.pyx to plasticity/bbrand.c
+building 'plasticity.bbrand' extension
+gcc -fno-strict-aliasing -I/Users/emily/anaconda/include -arch x86_64 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include -I. -Iplasticity/ -I/Users/emily/anaconda/include/python2.7 -c plasticity/bbrand.c -o build/temp.macosx-10.6-x86_64-2.7/plasticity/bbrand.o -O3 -Wall
+plasticity/bbrand.c:2073:28: warning: unused function '__Pyx_PyObject_AsString' [-Wunused-function]
+static CYTHON_INLINE char* __Pyx_PyObject_AsString(PyObject* o) {
+                           ^
+plasticity/bbrand.c:2070:32: warning: unused function '__Pyx_PyUnicode_FromString' [-Wunused-function]
+static CYTHON_INLINE PyObject* __Pyx_PyUnicode_FromString(const char* c_str) {
+                               ^
+plasticity/bbrand.c:491:29: warning: unused function '__Pyx_Py_UNICODE_strlen' [-Wunused-function]
+static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u)
+                            ^
+plasticity/bbrand.c:2135:26: warning: unused function '__Pyx_PyObject_IsTrue' [-Wunused-function]
+static CYTHON_INLINE int __Pyx_PyObject_IsTrue(PyObject* x) {
+                         ^
+plasticity/bbrand.c:2191:33: warning: unused function '__Pyx_PyIndex_AsSsize_t' [-Wunused-function]
+static CYTHON_INLINE Py_ssize_t __Pyx_PyIndex_AsSsize_t(PyObject* b) {
+                                ^
+plasticity/bbrand.c:2253:33: warning: unused function '__Pyx_PyInt_FromSize_t' [-Wunused-function]
+static CYTHON_INLINE PyObject * __Pyx_PyInt_FromSize_t(size_t ival) {
+                                ^
+plasticity/bbrand.c:1767:32: warning: unused function '__Pyx_PyInt_From_long' [-Wunused-function]
+static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {
+                               ^
+plasticity/bbrand.c:1798:27: warning: function '__Pyx_PyInt_As_long' is not needed and will not be emitted [-Wunneeded-internal-declaration]
+static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *x) {
+                          ^
+8 warnings generated.
+gcc -fno-strict-aliasing -I/Users/emily/anaconda/include -arch x86_64 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include -I. -Iplasticity/ -I/Users/emily/anaconda/include/python2.7 -c plasticity/randomkit.c -o build/temp.macosx-10.6-x86_64-2.7/plasticity/randomkit.o -O3 -Wall
+gcc -bundle -undefined dynamic_lookup -L/Users/emily/anaconda/lib -arch x86_64 -arch x86_64 build/temp.macosx-10.6-x86_64-2.7/plasticity/bbrand.o build/temp.macosx-10.6-x86_64-2.7/plasticity/randomkit.o -L/Users/emily/anaconda/lib -o build/lib.macosx-10.6-x86_64-2.7/plasticity/bbrand.so -g
+cythoning plasticity/train.pyx to plasticity/train.c
+building 'plasticity.train' extension
+gcc -fno-strict-aliasing -I/Users/emily/anaconda/include -arch x86_64 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include -I. -Iplasticity/ -I/Users/emily/anaconda/include/python2.7 -c plasticity/train.c -o build/temp.macosx-10.6-x86_64-2.7/plasticity/train.o -O3 -Wall
+In file included from plasticity/train.c:406:
+In file included from /Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include/numpy/arrayobject.h:4:
+In file included from /Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include/numpy/ndarrayobject.h:18:
+In file included from /Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include/numpy/ndarraytypes.h:1777:
+/Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: "Using deprecated NumPy API, disable it by "
+      "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-W#warnings]
+#warning "Using deprecated NumPy API, disable it by " \
+ ^
+plasticity/train.c:5850:32: warning: explicitly assigning value of variable of type 'struct __pyx_obj_10plasticity_5train___pyx_scope_struct__set_offsets_systematic *' to itself
+      [-Wself-assign]
+  if (1); else __pyx_cur_scope = __pyx_cur_scope;
+               ~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~
+plasticity/train.c:7461:32: warning: explicitly assigning value of variable of type 'struct __pyx_obj_10plasticity_5train___pyx_scope_struct_1_get_systematic_input_vector *' to
+      itself [-Wself-assign]
+  if (1); else __pyx_cur_scope = __pyx_cur_scope;
+               ~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~
+plasticity/train.c:30411:28: warning: unused function '__Pyx_PyObject_AsString' [-Wunused-function]
+static CYTHON_INLINE char* __Pyx_PyObject_AsString(PyObject* o) {
+                           ^
+plasticity/train.c:30408:32: warning: unused function '__Pyx_PyUnicode_FromString' [-Wunused-function]
+static CYTHON_INLINE PyObject* __Pyx_PyUnicode_FromString(const char* c_str) {
+                               ^
+plasticity/train.c:496:29: warning: unused function '__Pyx_Py_UNICODE_strlen' [-Wunused-function]
+static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u)
+                            ^
+plasticity/train.c:30591:33: warning: unused function '__Pyx_PyInt_FromSize_t' [-Wunused-function]
+static CYTHON_INLINE PyObject * __Pyx_PyInt_FromSize_t(size_t ival) {
+                                ^
+plasticity/train.c:27084:32: warning: unused function '__Pyx_GetItemInt_List_Fast' [-Wunused-function]
+static CYTHON_INLINE PyObject *__Pyx_GetItemInt_List_Fast(PyObject *o, Py_ssize_t i,
+                               ^
+plasticity/train.c:27099:32: warning: unused function '__Pyx_GetItemInt_Tuple_Fast' [-Wunused-function]
+static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Tuple_Fast(PyObject *o, Py_ssize_t i,
+                               ^
+plasticity/train.c:27196:30: warning: unused function '__Pyx_PyUnicode_Equals' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_PyUnicode_Equals(PyObject* s1, PyObject* s2, int equals) {
+                             ^
+plasticity/train.c:28727:30: warning: unused function '__Pyx_c_eq_float' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_eq_float(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                             ^
+plasticity/train.c:28730:48: warning: unused function '__Pyx_c_sum_float' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_sum_float(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                               ^
+plasticity/train.c:28736:48: warning: unused function '__Pyx_c_diff_float' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_diff_float(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                               ^
+plasticity/train.c:28749:48: warning: unused function '__Pyx_c_quot_float' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_quot_float(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                               ^
+plasticity/train.c:28780:48: warning: unused function '__Pyx_c_neg_float' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_neg_float(__pyx_t_float_complex a) {
+                                               ^
+plasticity/train.c:28786:30: warning: unused function '__Pyx_c_is_zero_float' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_is_zero_float(__pyx_t_float_complex a) {
+                             ^
+plasticity/train.c:28789:48: warning: unused function '__Pyx_c_conj_float' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_conj_float(__pyx_t_float_complex a) {
+                                               ^
+plasticity/train.c:28803:52: warning: unused function '__Pyx_c_pow_float' [-Wunused-function]
+        static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_pow_float(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                                   ^
+plasticity/train.c:28874:30: warning: unused function '__Pyx_c_eq_double' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_eq_double(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                             ^
+plasticity/train.c:28877:49: warning: unused function '__Pyx_c_sum_double' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_sum_double(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                ^
+plasticity/train.c:28883:49: warning: unused function '__Pyx_c_diff_double' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_diff_double(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                ^
+plasticity/train.c:28896:49: warning: unused function '__Pyx_c_quot_double' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_quot_double(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                ^
+plasticity/train.c:28927:49: warning: unused function '__Pyx_c_neg_double' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_neg_double(__pyx_t_double_complex a) {
+                                                ^
+plasticity/train.c:28933:30: warning: unused function '__Pyx_c_is_zero_double' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_is_zero_double(__pyx_t_double_complex a) {
+                             ^
+plasticity/train.c:28936:49: warning: unused function '__Pyx_c_conj_double' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_conj_double(__pyx_t_double_complex a) {
+                                                ^
+plasticity/train.c:28950:53: warning: unused function '__Pyx_c_pow_double' [-Wunused-function]
+        static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_pow_double(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                    ^
+plasticity/train.c:2220:15: warning: unused function '__pyx_f_10plasticity_5train_randuu' [-Wunused-function]
+static double __pyx_f_10plasticity_5train_randuu(void) {
+              ^
+plasticity/train.c:23732:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew1' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__pyx_v_a) {
+                               ^
+plasticity/train.c:23779:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew2' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
+                               ^
+plasticity/train.c:23826:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew3' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c) {
+                               ^
+plasticity/train.c:23873:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew4' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c, PyObject *__pyx_v_d) {
+                               ^
+plasticity/train.c:23920:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew5' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c, PyObject *__pyx_v_d, PyObject *__pyx_v_e) {
+                               ^
+plasticity/train.c:24722:27: warning: unused function '__pyx_f_5numpy_set_array_base' [-Wunused-function]
+static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_arr, PyObject *__pyx_v_base) {
+                          ^
+plasticity/train.c:24818:32: warning: unused function '__pyx_f_5numpy_get_array_base' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__pyx_v_arr) {
+                               ^
+plasticity/train.c:24892:26: warning: unused function '__pyx_f_5numpy_import_array' [-Wunused-function]
+static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
+                         ^
+plasticity/train.c:25023:26: warning: unused function '__pyx_f_5numpy_import_umath' [-Wunused-function]
+static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
+                         ^
+plasticity/train.c:25154:26: warning: unused function '__pyx_f_5numpy_import_ufunc' [-Wunused-function]
+static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
+                         ^
+37 warnings generated.
+gcc -fno-strict-aliasing -I/Users/emily/anaconda/include -arch x86_64 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/emily/anaconda/lib/python2.7/site-packages/numpy/core/include -I. -Iplasticity/ -I/Users/emily/anaconda/include/python2.7 -c plasticity/randomkit.c -o build/temp.macosx-10.6-x86_64-2.7/plasticity/randomkit.o -O3 -Wall
+gcc -bundle -undefined dynamic_lookup -L/Users/emily/anaconda/lib -arch x86_64 -arch x86_64 build/temp.macosx-10.6-x86_64-2.7/plasticity/train.o build/temp.macosx-10.6-x86_64-2.7/plasticity/randomkit.o -L/Users/emily/anaconda/lib -o build/lib.macosx-10.6-x86_64-2.7/plasticity/train.so -g
+running build_scripts
+running install_lib
+copying build/lib.macosx-10.6-x86_64-2.7/plasticity/bbrand.so -> /Users/emily/anaconda/lib/python2.7/site-packages/plasticity
+copying build/lib.macosx-10.6-x86_64-2.7/plasticity/train.so -> /Users/emily/anaconda/lib/python2.7/site-packages/plasticity
+running install_scripts
+changing mode of /Users/emily/anaconda/bin/Plasticity.pyw to 755
+running install_egg_info
+Removing /Users/emily/anaconda/lib/python2.7/site-packages/plasticity-0.1.2-py2.7.egg-info
+Writing /Users/emily/anaconda/lib/python2.7/site-packages/plasticity-0.1.2-py2.7.egg-info
+Swanton:plasticity emily$ python
+Python 2.7.12 |Anaconda custom (x86_64)| (default, Jul  2 2016, 17:43:17) 
+[GCC 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> import plasticity
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "plasticity/__init__.py", line 6, in <module>
+    from run import run
+  File "plasticity/run.py", line 19, in <module>
+    from run_sim import *
+  File "plasticity/run_sim.py", line 15, in <module>
+    from train import *
+ImportError: No module named train
+
